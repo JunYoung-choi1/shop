@@ -19,7 +19,6 @@ public class DaoImpl implements Dao {
 		db = DBConnect.getInstance();
 	}
 
-	
 	public void insert(Member m) {
 		Connection conn=null;
 		String sql="insert into shop_member values(?,?,?,?,?,?)";
@@ -34,7 +33,7 @@ public class DaoImpl implements Dao {
 			pstmt.setString(4, m.getEmail());
 			pstmt.setString(5, m.getAddr());
 			pstmt.setInt(6, m.getType());
-	
+			
 			pstmt.executeUpdate();
 			
 		} catch (SQLException e) {

@@ -30,7 +30,7 @@ public class JoinController extends HttpServlet {
 		
 		Service service = new ServiceImpl();
 		
-		
+	
 		String id = request.getParameter("id");
 		String pwd = request.getParameter("password");
 		String name = request.getParameter("name");

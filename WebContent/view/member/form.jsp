@@ -42,7 +42,6 @@
 </tr>
 
 
-
 <tr>
 <td><input type="reset" value="취소">
 <input type="submit" value="가입"><br />

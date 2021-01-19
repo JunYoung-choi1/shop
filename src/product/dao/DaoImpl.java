@@ -48,7 +48,7 @@ public class DaoImpl implements Dao {
 	@Override
 	public int selectNum() {
 		
-		return null;
+		return 0;
 	}
 	
 	

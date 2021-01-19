@@ -32,7 +32,7 @@ public class ServiceImpl implements Service {
 
 	public boolean login(String id, String pwd) {
 		Member m = dao.select(id);
-		return null;
+		
 	}
 
 }

@@ -30,6 +30,9 @@ public class EditController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		
+		// 1. 미리 값이 무엇이 들어올지 설정할 것.
+		
+		
 		
 	}
 

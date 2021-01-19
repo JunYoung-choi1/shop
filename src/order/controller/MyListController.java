@@ -37,6 +37,21 @@ public class MyListController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		HttpSession session = request.getSession();
+		session.setAttribute("m", new Member("id", "pwd", "name", "email", "addr", 1));
+		Member m = (Member) session.getAttribute("m");
+		String o_id = m.getId();
+		Service service = new ServiceImpl();
+		
+		ArrayList<Order> cart = service.orderList(o_id, 2);
+		request.setAttribute("cart", cart);
+		
+		ArrayList<Order> orders = service.orderList(o_id, 1);
+		request.setAttribute("orders", orders);
+		
+		String path = "/view/order/myList.jsp";
+		RequestDispatcher dispatcher = request.getRequestDispatcher(path);
+		dispatcher.forward(request, response);
 	}
 
 	/**

@@ -34,7 +34,7 @@ public class DaoImpl implements Dao {
 			pstmt.setString(4, m.getEmail());
 			pstmt.setString(5, m.getAddr());
 			pstmt.setInt(6, m.getType());
-			
+	
 			pstmt.executeUpdate();
 			
 		} catch (SQLException e) {

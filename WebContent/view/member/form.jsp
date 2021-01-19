@@ -41,7 +41,6 @@
 					<input type="radio" name="type" value="2">구매자	<br></td>
 </tr>
 
-
 <tr>
 <td><input type="reset" value="취소">
 <input type="submit" value="가입"><br />
